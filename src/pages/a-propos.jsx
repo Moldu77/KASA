@@ -1,5 +1,5 @@
 export default function Apropos(){
-    retur,(
-        <h1>A propos</h1>
+    return(
+        <h1>À propos</h1>
     )
 }
