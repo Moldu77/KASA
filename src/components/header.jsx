@@ -9,15 +9,10 @@ export default function Header() {
         <source media="(max-width: 768px)" srcSet={LogoMobile} />
         <img src={LogoDesktop} alt="Logo Kasa" />
       </picture>
-      <nav>
-        <ul>
-          <li>
-            <NavLink to="/">Accueil</NavLink>
-          </li>
-          <li>
-            <NavLink to="/a-propos">À propos</NavLink>
-          </li>
-        </ul>
+      <nav className="nav">
+        <NavLink to="/">Accueil</NavLink>
+
+        <NavLink to="/a-propos">À propos</NavLink>
       </nav>
     </header>
   );
