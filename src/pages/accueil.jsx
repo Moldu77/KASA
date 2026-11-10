@@ -1,11 +1,16 @@
-import PictureAccueil from "../components/picture-accueil";
+import Banner from "../components/banner";
 import logements from "../data/logements.json";
 import CardLogement from "../components/card-logement";
+import ImageAccueil from "../assets/Image-accueil.png";
 
 export default function Accueil() {
   return (
     <div>
-  <PictureAccueil />
+  <Banner 
+   image={ImageAccueil}
+   alt="Paysage montagneux"
+   title="Chez vous, partout et ailleurs"
+  />
   <div className="logements">
    { logements.map((logement) => (
       <CardLogement
