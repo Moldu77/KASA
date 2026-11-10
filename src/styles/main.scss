@@ -167,29 +167,22 @@ footer {
   color: black;
   font-size: 24px;
 }
-
-// page a Propos//
+//////////////////////////////////////////////// page a Propos////////////////////////////////////////////////
 .apropos-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin: auto;
   padding: 20px;
   width: 100%;
   max-width: 1230px;
-  gap: 20px;
+  gap: 25px;
 }
 .collapse-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: auto;
   padding: 20px;
   width: 100%;
   max-width: 1230px;
-  gap: 10px;
 }
 
 .apropos-button {
@@ -197,7 +190,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  padding: 10px;
+  padding: 8px;
   border: 1px solid transparent;
   border-radius: 10px;
   width: 100%;
