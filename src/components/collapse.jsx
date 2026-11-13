@@ -18,7 +18,7 @@ export default function Collapse({ title, content }) {
           <img src={ChevronDown} alt="" />
         </span>
       </button>
-      {displayContent && <p className="banner-subtitle">{content}</p>}
+      {displayContent && <div className="banner-subtitle">{content}</div>}
     </div>
   );
 }
