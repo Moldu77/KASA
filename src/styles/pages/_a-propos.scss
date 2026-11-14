@@ -1,0 +1,43 @@
+.apropos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 1230px;
+  gap: 25px;
+}
+.collapse-container {
+  padding: 20px;
+  width: 100%;
+  max-width: 1230px;
+}
+
+.apropos-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1230px;
+  background-color: #ff6060;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+.vector-icon-open {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.banner-subtitle {
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 16px;
+  background-color: #f6f6f673;
+}

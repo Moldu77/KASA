@@ -1,0 +1,59 @@
+.logements {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 50px auto;
+  padding: 50px;
+  width: 100%;
+  max-width: 1240px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+}
+
+.card-logement {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 340px;
+  height: 340px;
+  border-radius: 20px;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  &__dark-bg {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  p {
+    position: absolute;
+    top:80%;
+    left:5%;
+    color: white;
+    font-size: 18px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  }
+  &-link {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    max-width: 340px;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+
+  &-link:hover {
+    transform: scale(1.02);
+  }
+}

@@ -1,0 +1,24 @@
+header {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  margin: 0 auto;
+  width: 1240px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover,
+  a:focus {
+    border-bottom: 1px solid black;
+  }
+}

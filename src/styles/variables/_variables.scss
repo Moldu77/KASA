@@ -1,0 +1,46 @@
+$primary_color: red;
+$secondary_color: blue;
+$font-primary: Montserrat, sans-serif;
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  padding:15px;
+}
+
+
+.toto{
+    @include flex-column;
+
+}
+/*
+<div class="toto">
+    <section class="mySection>
+    <p class="titi">Coucou <span>Toi </span></p>
+    </section>
+
+</div>
+*/
+.toto{
+    padding:25px;
+
+    .mySection{
+        border-radius:25px solid red;
+    }
+
+    .titi{
+        font-size: 25px;
+
+        span{
+            color:black
+        }
+    }
+
+
+
+}
+
+
+
+
+

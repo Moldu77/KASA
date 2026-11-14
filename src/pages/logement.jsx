@@ -2,12 +2,19 @@ import logements from "../data/logements.json";
 import SlideShow from "../components/slideShow";
 import Collapse from "../components/collapse";
 import { useParams } from "react-router";
+import Rating from "../components/rating";
 
 export default function Logement() {
+
+
+  // Mettre en place un useState / useEffect pour les informations du logement
+
   const { id } = useParams();
   const logement = logements.find((logement) => {
     return logement.id === id;
   });
+
+  // Si l'id du logement n'existe pas = RETURN page 404
   return (
     <div className="logement">
       <SlideShow images={logement.pictures} title={logement.title} />
@@ -28,10 +35,13 @@ export default function Logement() {
       <div className="tags-rating">
         <div className="tags">
           {logement.tags.map((tag) => (
-            <span className="tag-span" key={tag}>
+            <span className="tag-item" key={tag}>
               {tag}
             </span>
           ))}
+        </div>
+        <div className="rates">
+          <Rating rating={logement.rating} />
         </div>
       </div>
       <div className="description-equipements">
