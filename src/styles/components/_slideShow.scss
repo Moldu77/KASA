@@ -21,6 +21,14 @@
       border-radius: $radius-md;
     }
   }
+  .count-picture {
+    position: absolute;
+    left: 50%;
+    bottom: 4%;
+    color: $color-light;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: $radius-md;
+  }
 }
 
 .btn-slide {

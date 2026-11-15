@@ -39,7 +39,7 @@
   letter-spacing: 2px;
   padding: 16px;
   background-color: rgba($color-light, 0.45);
-
+  height: 200px;
   @include mobile {
     font-size: 12px;
     letter-spacing: normal;

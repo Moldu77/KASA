@@ -5,11 +5,10 @@ import Logement from "../pages/logement";
 
 export default function SlideShow({ images, title }) {
   const [indexImg, setIndexImg] = useState(0);
-  
 
   return (
     <div className="caroussel">
-      <button
+      {indexImg !== 0   &&(<button
         className="btn-slide left"
         onClick={() => {
           setIndexImg(indexImg === 0 ? images.length - 1 : indexImg - 1);
@@ -17,18 +16,22 @@ export default function SlideShow({ images, title }) {
         aria-label="Image précédente"
       >
         <img src={slideLeft} alt="" />
-      </button>
+      </button>)}
       <img src={images[indexImg]} alt={title} />
+      <p className="count-picture">
+        {indexImg + 1}/{images.length}
+      </p>
+      { images.length-1 !== indexImg &&(
       <button
         className="btn-slide right"
         onClick={() => {
           setIndexImg(indexImg === images.length - 1 ? 0 : indexImg + 1);
         }}
         aria-label="Image suivante"
+        
       >
         <img src={slideRight} alt="" />
-      </button>
+      </button>)}
     </div>
-    
   );
 }
