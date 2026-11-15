@@ -5,8 +5,6 @@ import { useParams } from "react-router";
 import Rating from "../components/rating";
 
 export default function Logement() {
-
-
   // Mettre en place un useState / useEffect pour les informations du logement
 
   const { id } = useParams();
@@ -40,9 +38,7 @@ export default function Logement() {
             </span>
           ))}
         </div>
-        <div className="rates">
-          <Rating rating={logement.rating} />
-        </div>
+        <Rating rating={logement.rating} />
       </div>
       <div className="description-equipements">
         <Collapse title="Description" content={logement.description} />

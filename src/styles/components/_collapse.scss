@@ -1,0 +1,47 @@
+@use "../variables/breakpoints" as *;
+@use "../variables/variables" as *;
+
+.collapse-container {
+  padding: 20px;
+  width: 100%;
+
+  @include mobile {
+    padding: 10px 0;
+  }
+}
+
+.apropos-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: $radius-md;
+  width: 100%;
+  background-color: $color-primary;
+  color: $color-white;
+  font-size: 24px;
+  cursor: pointer;
+
+  @include mobile {
+    border-radius: $radius-sm;
+    font-size: 13px;
+  }
+}
+
+.vector-icon-open {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.banner-subtitle {
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 16px;
+  background-color: rgba($color-light, 0.45);
+
+  @include mobile {
+    font-size: 12px;
+    letter-spacing: normal;
+  }
+}

@@ -1,6 +1,9 @@
+@use "../variables/breakpoints" as *;
+@use "../variables/variables" as *;
+
 footer {
-  background-color: black;
-  color: white;
+  background-color: $color-black;
+  color: $color-white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,4 +11,15 @@ footer {
   gap: 20px;
   padding: 20px 50px;
   width: 100%;
+
+  @include mobile {
+    padding: 40px 20px;
+  }
+
+  p {
+    @include mobile {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
 }

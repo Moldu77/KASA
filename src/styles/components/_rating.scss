@@ -1,0 +1,16 @@
+@use "../variables/breakpoints" as *;
+
+.rates {
+  display: flex;
+  gap: 8px;
+
+  @include mobile {
+    gap: 4px;
+  }
+
+  img {
+    @include mobile {
+      width: 15px;
+    }
+  }
+}

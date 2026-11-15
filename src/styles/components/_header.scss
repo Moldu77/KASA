@@ -1,24 +1,39 @@
+@use "../variables/breakpoints" as *;
+@use "../variables/variables" as *;
+
 header {
   background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  margin: 0 auto;
-  width: 1240px;
+
+  @include mobile {
+    padding: 20px;
+  }
 }
+
 .nav {
   display: flex;
   justify-content: center;
   gap: 30px;
 
-  a {
-    text-decoration: none;
-    color: black;
+  @include mobile {
+    gap: 15px;
   }
 
-  a:hover,
-  a:focus {
-    border-bottom: 1px solid black;
+  a {
+    text-decoration: none;
+    color: $color-black;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $color-black;
+    }
+
+    @include mobile {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
   }
 }
