@@ -52,6 +52,10 @@
     right: 2%;
   }
 
+  :active{
+    transform: scale(0.9);
+  }
+
   img {
     @include mobile {
       height: 20px;
