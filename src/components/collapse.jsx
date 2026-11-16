@@ -13,12 +13,12 @@ export default function Collapse({ title, content }) {
         aria-expanded={displayContent ? true : false}
       >
         {title}
-        <span className={displayContent? "vector-icon-open": ""   
+        <span className={displayContent? "vector-icon-open": "vector-icon-close"   
         }>
           <img src={ChevronDown} alt="" />
         </span>
-      </button>
-      {displayContent && <div className="banner-subtitle">{content}</div>}
+      </button >
+     <div className={displayContent?"banner-subtitle banner-subtitle-open" : "banner-subtitle"}>{content}</div>
     </div>
   );
 }
