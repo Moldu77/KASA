@@ -70,10 +70,22 @@ Le site est alors disponible sur **http://localhost:5173**.
 | `npm run build` | Génère la version de production dans `dist/` |
 | `npm run preview` | Prévisualise la version de production |
 | `npm run lint` | Vérifie le code avec ESLint |
+| `npm run start:sass` | *(optionnel)* Compile le Sass dans `src/css/style.css`, pour lire le CSS généré |
+
+> Le Sass n'a pas besoin d'être compilé à part : `main.scss` est importé dans `main.jsx`, et Vite le transforme en CSS automatiquement, en développement comme au build.
 
 ---
 
 ## 🗂️ Organisation du code
+
+```
+KASA/
+├── index.html     point d'entrée de l'application (à la racine, comme l'exige Vite)
+├── public/        fichiers copiés tels quels (favicon)
+├── dist/          version de production, créée par npm run build
+│                  (non versionnée, listée dans .gitignore)
+└── src/           code source
+```
 
 ```
 src/
@@ -111,6 +123,7 @@ Toutes les pages partagent le même `Layout` (Header + Footer).
 - Afficher des listes de données avec `map` et `key`
 - Structurer ses styles avec **Sass** (imbrication, partiels, variables, mixins pour le responsive)
 - Ajouter des **transitions CSS** pour animer l'interface (sections dépliables, boutons du carrousel)
+- Comprendre le rôle de **Vite** : point d'entrée `index.html`, dossier `public/`, compilation du Sass et dossier de production `dist/`
 - Soigner l'**accessibilité** : textes alternatifs, `aria-label`, `aria-expanded`
 
 ---
