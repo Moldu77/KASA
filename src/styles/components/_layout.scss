@@ -19,7 +19,6 @@ body,
   flex-direction: column;
 }
 
-
 header,
 main {
   width: 100%;
@@ -28,7 +27,7 @@ main {
 }
 
 main {
-  flex: 1; 
+  flex: 1;
 
   @include mobile {
     padding: 0 20px;

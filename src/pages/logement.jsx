@@ -13,8 +13,8 @@ export default function Logement() {
     return logement.id === id;
   });
 
-  if(logement===undefined){
-    return <Navigate to ="/404" replace />
+  if (logement === undefined) {
+    return <Navigate to="/404" replace />;
   }
   return (
     <div className="logement">
