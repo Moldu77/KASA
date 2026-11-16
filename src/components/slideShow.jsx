@@ -1,7 +1,6 @@
 import { useState } from "react";
 import slideLeft from "../assets/slide-left.svg";
 import slideRight from "../assets/slide-right.svg";
-import Logement from "../pages/logement";
 
 export default function SlideShow({ images, title }) {
   const [indexImg, setIndexImg] = useState(0);
