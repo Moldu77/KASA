@@ -3,6 +3,7 @@ import SlideShow from "../components/slideShow";
 import Collapse from "../components/collapse";
 import { useParams } from "react-router";
 import Rating from "../components/rating";
+import { Navigate } from "react-router";
 
 export default function Logement() {
   // Mettre en place un useState / useEffect pour les informations du logement
@@ -12,7 +13,9 @@ export default function Logement() {
     return logement.id === id;
   });
 
-  // Si l'id du logement n'existe pas = RETURN page 404
+  if(logement===undefined){
+    return <Navigate to ="/404" replace />
+  }
   return (
     <div className="logement">
       <SlideShow images={logement.pictures} title={logement.title} />
