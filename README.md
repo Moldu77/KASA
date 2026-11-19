@@ -81,7 +81,7 @@ Le site est alors disponible sur **http://localhost:5173**.
 ```
 KASA/
 ├── index.html     point d'entrée de l'application (à la racine, comme l'exige Vite)
-├── public/        fichiers copiés tels quels (favicon)
+├── public/        fichiers copiés tels quels (favicon iconKasa.svg)
 ├── dist/          version de production, créée par npm run build
 │                  (non versionnée, listée dans .gitignore)
 └── src/           code source
@@ -94,13 +94,21 @@ src/
 │                  (Layout, Header, Footer, Banner, CardLogement,
 │                   Collapse, SlideShow, Rating)
 ├── data/          logements.json
-├── pages/         Accueil, À propos, Logement, 404
-├── router/        configuration des routes
-└── styles/        Sass, assemblés dans main.scss
-    ├── components/  un fichier par composant
+├── pages/         Accueil, APropos, Logement, Page404
+├── router/        configuration des routes (routes.jsx)
+├── main.jsx       point de montage React, importe main.scss
+└── styles/        Sass, assemblés dans main.scss avec @use
+    ├── components/  un fichier par composant (+ _Host.scss pour le bloc hôte)
     ├── pages/       un fichier par page
-    └── variables/   couleurs, ombres, arrondis et points de rupture
+    └── variables/   _Variables.scss (couleurs, ombres, arrondis)
+                     et _Breakpoints.scss (mixin mobile)
 ```
+
+### Conventions de nommage
+
+- Les composants et les pages sont nommés en **PascalCase** (`CardLogement.jsx`, `SlideShow.jsx`, `APropos.jsx`…).
+- Chaque fichier de style partiel porte le même nom que son composant ou sa page, précédé d'un `_` (`CardLogement.jsx` → `styles/components/_CardLogement.scss`).
+- Les classes CSS restent en **kebab-case** (`title-host`, `host-picture`…).
 
 ### Routes
 

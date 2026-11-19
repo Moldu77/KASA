@@ -1,7 +1,7 @@
 import Banner from "../components/Banner";
 import logements from "../data/logements.json";
 import CardLogement from "../components/CardLogement";
-import ImageAccueil from "../assets/Image-accueil.png";
+import ImageAccueil from "../assets/Image-accueil.webp";
 
 export default function Accueil() {
   return (
