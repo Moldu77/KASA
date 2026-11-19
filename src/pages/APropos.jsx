@@ -1,6 +1,6 @@
-import Banner from "../components/banner";
+import Banner from "../components/Banner";
 import ImageApropos from "../assets/Image-a-propos.png";
-import Collapse from "../components/collapse";
+import Collapse from "../components/Collapse";
 
 export default function Apropos() {
   return (

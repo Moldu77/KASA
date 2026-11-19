@@ -1,6 +1,6 @@
-import Banner from "../components/banner";
+import Banner from "../components/Banner";
 import logements from "../data/logements.json";
-import CardLogement from "../components/card-logement";
+import CardLogement from "../components/CardLogement";
 import ImageAccueil from "../assets/Image-accueil.png";
 
 export default function Accueil() {

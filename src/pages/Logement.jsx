@@ -1,8 +1,8 @@
 import logements from "../data/logements.json";
-import SlideShow from "../components/slideShow";
-import Collapse from "../components/collapse";
+import SlideShow from "../components/SlideShow";
+import Collapse from "../components/Collapse";
 import { useParams } from "react-router";
-import Rating from "../components/rating";
+import Rating from "../components/Rating";
 import { Navigate } from "react-router";
 
 export default function Logement() {

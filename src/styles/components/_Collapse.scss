@@ -1,5 +1,5 @@
-@use "../variables/breakpoints" as *;
-@use "../variables/variables" as *;
+@use "../variables/Breakpoints" as *;
+@use "../variables/Variables" as *;
 
 .collapse-container {
   padding: 20px;
@@ -23,6 +23,7 @@
   color: $color-white;
   font-size: 24px;
   cursor: pointer;
+  font-family: inherit;
 
   @include mobile {
     border-radius: $radius-sm;
