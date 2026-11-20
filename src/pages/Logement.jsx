@@ -6,8 +6,6 @@ import Rating from "../components/Rating";
 import { Navigate } from "react-router";
 
 export default function Logement() {
-  // Mettre en place un useState / useEffect pour les informations du logement
-
   const { id } = useParams();
   const logement = logements.find((logement) => {
     return logement.id === id;

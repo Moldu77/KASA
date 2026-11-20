@@ -16,7 +16,7 @@ Quatre sections dépliables présentant les valeurs de Kasa : Fiabilité, Respec
 
 **🛋️ Page Logement**
 
-- Un carrousel de photos avec flèches de navigation et compteur (ex. `2/5`) ; la flèche gauche est masquée sur la première photo et la flèche droite sur la dernière
+- Un carrousel de photos qui boucle (après la dernière photo on revient à la première, et inversement), avec flèches de navigation et compteur (ex. `2/5`) ; flèches et compteur sont masqués quand le logement n'a qu'une seule photo
 - Le titre, la localisation et les tags du logement
 - La photo et le nom de l'hôte
 - La note affichée en étoiles
