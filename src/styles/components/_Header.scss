@@ -26,6 +26,7 @@ header {
     color: $color-black;
 
     &:hover,
+    &:active,
     &:focus {
       border-bottom: 1px solid $color-black;
     }
